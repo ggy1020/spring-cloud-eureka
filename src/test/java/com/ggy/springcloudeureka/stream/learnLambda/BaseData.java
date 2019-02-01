@@ -4,12 +4,26 @@ import com.ggy.springcloudeureka.stream.model.Order;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 
 public class BaseData {
     public static List<Order> orderList = new ArrayList<>();
 
+    public static List<Integer>  nums = new ArrayList<>();
+
+    public static HashSet<Integer> hashSet= new HashSet<Integer>();
+
     static {
+        //存放list
+        nums.add(1);nums.add(50);nums.add(10);nums.add(77);nums.add(7);nums.add(8);nums.add(4);nums.add(6);
+        //存放hashset
+        hashSet.add(55);hashSet.add(77);hashSet.add(66);
+        hashSet.add(15);hashSet.add(37);hashSet.add(46);
+        hashSet.add(57);hashSet.add(67);hashSet.add(96);
+        hashSet.add(44);hashSet.add(12);hashSet.add(11);
+        //存放对象
         orderList.add(new Order("4", new BigDecimal("4000"), "北京", "2018-12-12"));
         orderList.add(new Order("2", new BigDecimal("2000"), "深圳", "2018-12-12"));
         orderList.add(new Order("3", new BigDecimal("3000"), "郑州", "2018-12-12"));

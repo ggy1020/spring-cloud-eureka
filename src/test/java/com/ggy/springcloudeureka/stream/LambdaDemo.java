@@ -17,6 +17,7 @@ public class LambdaDemo {
 
 // 1.2使用 lambda expression
         new Thread(() -> System.out.println("Hello world4554 !")).start();
+        new Thread(() -> System.out.println("11111")).start();
 
 // 2.1使用匿名内部类
         Runnable race1 = new Runnable() {
